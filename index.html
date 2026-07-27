@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Kashish Jaiswal — Inquisitive &amp; Impactful</title>
+<meta name="description" content="Portfolio of Kashish Jaiswal — Class XII Humanities + Applied Maths, Content Writer, Researcher, Orator. Sunbeam School Mughalsarai."/>
+<meta property="og:title" content="Kashish Jaiswal — Inquisitive & Impactful"/>
+<meta property="og:description" content="Debater, researcher, and builder. Class XII Humanities + Applied Maths at Sunbeam School Mughalsarai."/>
+<meta property="og:type" content="website"/>
+<meta name="twitter:card" content="summary"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23F7F4EA'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-weight='700' fill='%238A1C14' text-anchor='middle'%3EKJ%3C/text%3E%3C/svg%3E"/>
+<!-- Fonts: Cormorant Garamond (Serif) + DM Sans (Clean body) + DM Mono -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet"/>
+<style>
+/* ══════════════════════════════════════════════
+   DESIGN TOKENS (Classic Oxford Beige & Maroon Theme)
+══════════════════════════════════════════════ */
+:root {
+  --bg:        #F7F4EA;
+  --bg2:       #ECE6D8;
+  --surf:      #ffe2e2;
+  --surf2:     #F4EFE3;
+  --gold:      #8A1C14;
+  --gold-lt:   #B33027;
+  --gold-dk:   #5C130D;
+  --gold-rgb:  138, 28, 20;
+  --text:      #2D2424;
+  --text2:     #4A3F3F;
+  --muted:     #6E6161;
+  --gold-10:   rgba(var(--gold-rgb), 0.07);
+  --gold-15:   rgba(var(--gold-rgb), 0.12);
+  --gold-20:   rgba(var(--gold-rgb), 0.18);
+  --gold-bdr:  rgba(var(--gold-rgb), 0.30);
+  --gold-bdr2: rgba(var(--gold-rgb), 0.15);
+  --line:      rgba(45, 36, 36, 0.08);
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans:  'DM Sans', system-ui, sans-serif;
+  --mono:  'DM Mono', monospace;
+  --nav-h:  72px;
+  --ease:  cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease2:  cubic-bezier(0.16, 1, 0.3, 1);
+  --r:      12px;
+  --r2:     20px;
+}
+/* ══════════════════════════════════════════════
+   RESET
+══════════════════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;font-size:16px;}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.72;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+img{display:block;max-width:100%;}
+a{color:inherit;text-decoration:none;}
+ul{list-style:none;}
+button{cursor:pointer;border:none;background:none;font-family:inherit;}
+::selection{background:var(--gold);color:#FFFFFF;}
+::-webkit-scrollbar{width:6px;}
+::-webkit-scrollbar-track{background:var(--bg);}
+::-webkit-scrollbar-thumb{background:var(--gold-bdr);border-radius:3px;}
+section[id]{scroll-margin-top:var(--nav-h);}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important;}
+  .ring-1,.ring-2{animation:none;}
+}
+/* ══════════════════════════════════════════════
+   NOISE TEXTURE
+══════════════════════════════════════════════ */
+body::before{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:9000;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.78' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.02'/%3E%3C/svg%3E");
+  opacity:.4;
+}
+/* ══════════════════════════════════════════════
+   TYPOGRAPHY UTILITIES
+══════════════════════════════════════════════ */
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:var(--mono);font-size:.62rem;letter-spacing:.28em;
+  text-transform:uppercase;color:var(--gold-dk);font-weight:600;
+}
+.eyebrow::before{content:'';width:22px;height:1px;background:var(--gold-dk);}
+.h-display{
+  font-family:var(--serif);font-size:clamp(2.6rem,5vw,4.2rem);
+  font-weight:700;line-height:1.08;color:var(--text);
+}
+.h-display em{font-style:italic;color:var(--gold-dk);}
+.body-lg{font-size:.95rem;color:var(--text2);line-height:1.88;}
+.body-sm{font-size:.82rem;color:var(--muted);line-height:1.78;}
+/* ══════════════════════════════════════════════
+   LAYOUT
+══════════════════════════════════════════════ */
+.container{padding:112px 7vw;}
+.container-sm{padding:88px 7vw;}
+.section-divider{
+  height:1px;margin:0 7vw;
+  background:linear-gradient(90deg,transparent,var(--gold-bdr),var(--gold-bdr2),transparent);
+}
+/* ══════════════════════════════════════════════
+   CARDS & COMPONENTS
+══════════════════════════════════════════════ */
+.card{
+  border:1px solid var(--gold-bdr2);border-radius:var(--r);
+  background:var(--surf);padding:28px 26px;position:relative;overflow:hidden;
+  box-shadow: 0 4px 20px rgba(45, 36, 36, 0.04);
+  transition:border-color .35s var(--ease),transform .35s var(--ease),background .35s,box-shadow .35s;
+}
+.card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,var(--gold),#C29B38);
+  opacity:0;transition:opacity .35s;
+}
+.card:hover{border-color:var(--gold-bdr);background:var(--surf2);transform:translateY(-3px);box-shadow: 0 10px 25px rgba(45, 36, 36, 0.08);}
+.card:hover::before{opacity:1;}
+.tag{
+  display:inline-block;padding:3px 11px;border-radius:100px;
+  border:1px solid var(--gold-bdr);
+  font-family:var(--mono);font-size:.63rem;color:var(--gold-dk);margin:2px 2px 2px 0;
+  background: #FFFFFF;
+}
+.pill{
+  display:inline-flex;align-items:center;gap:7px;padding:6px 16px;
+  border-radius:100px;border:1px solid var(--gold-bdr);background:var(--surf);
+  font-size:.75rem;color:var(--text2);transition:all .3s;
+  box-shadow: 0 2px 6px rgba(45, 36, 36, 0.04);
+}
+.pill:hover{border-color:var(--gold);background:var(--surf2);color:var(--gold-dk);transform:translateY(-1px);}
+.dashed-box{
+  border:1px dashed var(--gold-bdr);border-radius:var(--r2);
+  padding:52px 56px;position:relative;
+  background:radial-gradient(ellipse at 50% 0%,rgba(var(--gold-rgb),.05) 0%,transparent 65%);
+}
+.dashed-box::before{
+  content:'✦';position:absolute;top:-12px;left:50%;transform:translateX(-50%);
+  background:var(--bg);padding:0 12px;color:var(--gold);font-size:.9rem;
+}
+.info-card{
+  padding:24px 22px 22px 20px;
+  border-left:2px solid var(--gold);
+  border-radius:0 var(--r) var(--r) 0;
+  border-top:1px solid var(--gold-bdr2);
+  border-right:1px solid var(--gold-bdr2);
+  border-bottom:1px solid var(--gold-bdr2);
+  background:var(--surf);
+  box-shadow: 0 4px 15px rgba(45, 36, 36, 0.03);
+  transition:background .3s,border-left-width .3s,box-shadow .3s;
+}
+.info-card:hover{background:var(--surf2);border-left-width:3px;box-shadow: 0 6px 20px rgba(45, 36, 36, 0.06);}
+.btn-gold{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:13px 32px;border-radius:100px;
+  background:var(--gold);color:#FFFFFF;
+  font-family:var(--sans);font-size:.76rem;font-weight:600;
+  letter-spacing:.08em;text-transform:uppercase;
+  border:1px solid transparent;
+  box-shadow: 0 4px 15px rgba(var(--gold-rgb), 0.25);
+  transition:all .3s;
+}
+.btn-gold:hover{background:#6B150F;transform:translateY(-2px);box-shadow:0 8px 25px rgba(var(--gold-rgb), 0.35);}
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:13px 30px;border-radius:100px;
+  background:var(--surf);color:var(--text);
+  font-family:var(--sans);font-size:.76rem;font-weight:600;
+  letter-spacing:.08em;text-transform:uppercase;
+  border:1px solid var(--gold-bdr);
+  box-shadow: 0 4px 12px rgba(45, 36, 36, 0.05);
+  transition:all .3s;
+}
+.btn-ghost:hover{background:var(--gold);color:#FFFFFF;border-color:var(--gold);transform:translateY(-2px);box-shadow: 0 6px 18px rgba(var(--gold-rgb), 0.2);}
+/* ══════════════════════════════════════════════
+   REVEAL ANIMATIONS
+══════════════════════════════════════════════ */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .75s var(--ease2),transform .75s var(--ease2);}
+.reveal.in{opacity:1;transform:translateY(0);}
+.d1{transition-delay:.08s;}.d2{transition-delay:.16s;}.d3{transition-delay:.24s;}
+.d4{transition-delay:.32s;}.d5{transition-delay:.40s;}.d6{transition-delay:.48s;}
+#prog{
+  position:fixed;top:0;left:0;height:3px;z-index:2000;
+  background:linear-gradient(90deg,var(--gold),#C29B38);
+  transition:width .08s linear;
+}
+/* ══════════════════════════════════════════════
+   NAVIGATION
+══════════════════════════════════════════════ */
+#nav{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  height:var(--nav-h);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 7vw;
+  background:rgba(247, 244, 234, 0.85);
+  backdrop-filter:blur(16px) saturate(1.4);
+  -webkit-backdrop-filter:blur(16px) saturate(1.4);
+  border-bottom:1px solid var(--gold-bdr2);
+  transition:background .4s,box-shadow .4s;
+}
+#nav.scrolled{background:rgba(247, 244, 234, 0.95);box-shadow: 0 4px 20px rgba(45, 36, 36, 0.06);}
+.nav-logo{
+  font-family:var(--serif);font-size:1.45rem;font-weight:700;
+  color:var(--text);letter-spacing:.02em;
+}
+.nav-logo em{font-style:italic;color:var(--gold-dk);}
+.nav-links{display:flex;gap:2.2rem;align-items:center;}
+.nav-links a{
+  font-family:var(--mono);font-size:.64rem;font-weight:500;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--muted);
+  position:relative;transition:color .3s;
+}
+.nav-links a::after{
+  content:'';position:absolute;bottom:-4px;left:0;right:0;
+  height:2px;background:var(--gold);
+  transform:scaleX(0);transform-origin:right;
+  transition:transform .35s var(--ease);
+}
+.nav-links a:hover,.nav-links a.active{color:var(--gold-dk);}
+.nav-links a:hover::after,.nav-links a.active::after{transform:scaleX(1);transform-origin:left;}
+.nav-btn{
+  font-family:var(--mono);font-size:.64rem;font-weight:600;
+  letter-spacing:.12em;text-transform:uppercase;
+  color:#FFFFFF;background:var(--gold);
+  padding:8px 20px;border-radius:100px;
+  box-shadow: 0 2px 10px rgba(var(--gold-rgb), 0.2);
+  transition:all .3s;
+}
+.nav-btn:hover{background:var(--gold-dk);transform:translateY(-1px);box-shadow: 0 4px 15px rgba(var(--gold-rgb), 0.3);}
+.nav-ham{display:none;flex-direction:column;gap:5px;padding:4px;}
+.nav-ham span{width:22px;height:2px;background:var(--text);display:block;transition:all .3s;}
+#mob-menu{
+  display:none;position:fixed;top:var(--nav-h);left:0;right:0;z-index:999;
+  background:rgba(247, 244, 234, 0.98);
+  border-bottom:1px solid var(--gold-bdr2);
+  padding:24px 7vw 32px;
+  backdrop-filter:blur(20px);
+  box-shadow: 0 10px 25px rgba(45, 36, 36, 0.08);
+}
+#mob-menu.open{display:block;}
+#mob-menu a{
+  display:block;padding:13px 0;
+  font-family:var(--mono);font-size:.72rem;font-weight:500;
+  letter-spacing:.16em;text-transform:uppercase;
+  color:var(--muted);border-bottom:1px solid var(--line);
+  transition:color .3s;
+}
+#mob-menu a:hover{color:var(--gold-dk);}
+/* ══════════════════════════════════════════════
+   HERO
+══════════════════════════════════════════════ */
+#hero{
+  min-height:100vh;
+  display:flex;align-items:center;
+  padding:var(--nav-h) 7vw 0;
+  position:relative;overflow:hidden;
+}
+.hero-grid{
+  position:absolute;inset:0;pointer-events:none;
+  background-image:
+    linear-gradient(rgba(var(--gold-rgb), 0.08) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(var(--gold-rgb), 0.08) 1px,transparent 1px);
+  background-size:64px 64px;
+  mask-image:radial-gradient(ellipse 70% 70% at 50% 50%,black 20%,transparent 75%);
+}
+.hero-glow{
+  position:absolute;top:-10%;left:50%;transform:translateX(-50%);
+  width:100vw;height:100vh;pointer-events:none;
+  background:radial-gradient(ellipse,rgba(var(--gold-rgb), 0.06) 0%,transparent 62%);
+}
+.hero-layout{
+  display:grid;grid-template-columns:1fr 420px;
+  gap:60px;align-items:center;width:100%;position:relative;z-index:1;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:12px;
+  font-family:var(--mono);font-size:.62rem;font-weight:600;
+  letter-spacing:.30em;text-transform:uppercase;color:var(--gold-dk);
+  margin-bottom:28px;
+  animation:fadeUp .9s .1s var(--ease2) both;
+}
+.hero-eyebrow::before,.hero-eyebrow::after{content:'';height:1px;background:var(--gold-dk);}
+.hero-eyebrow::before{width:28px;}.hero-eyebrow::after{width:14px;}
+h1.hero-name{
+  font-family:var(--serif);
+  font-size:clamp(3.6rem,8vw,7rem);
+  font-weight:700;line-height:.96;
+  color:var(--text);margin-bottom:18px;
+  animation:fadeUp 1s .22s var(--ease2) both;
+}
+.hero-tagline{
+  font-family:var(--serif);
+  font-size:clamp(1.1rem,2vw,1.8rem);
+  font-style:italic;font-weight:600;
+  color:var(--gold-dk);line-height:1.6;max-width:580px;
+  margin-bottom:14px;
+  animation:fadeUp 1s .34s var(--ease2) both;
+}
+.hero-sub{
+  font-size:1rem;color:var(--muted);
+  max-width:520px;line-height:1.8;
+  margin-bottom:60px; 
+  animation:fadeUp 1s .44s var(--ease2) both;
+}
+.hero-pills{
+  display:flex;flex-wrap:wrap;gap:8px;margin-bottom:38px;
+  animation:fadeUp 1s .52s var(--ease2) both;
+}
+.hero-cta{
+  display:flex;gap:14px;flex-wrap:wrap;
+  animation:fadeUp 1s .60s var(--ease2) both;
+}
+.photo-ring{
+  width:350px;height:350px;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;
+  animation:fadeIn 1.2s .5s both;
+}
+.ring{position:absolute;border-radius:50%;border:2px solid;}
+.ring-1{width:420px;height:420px;border-color:rgba(var(--gold-rgb), 0.25);animation:spin 28s linear infinite;}
+.ring-2{width:380px;height:380px;border-color:rgba(var(--gold-rgb), 0.35);animation:spin 20s linear infinite reverse;border-style:dashed;}
+.ring-3{width:290px;height:290px;border-color:rgba(var(--gold-rgb), 0.25);}
+.hero-img{
+  width:350px;height:350px;border-radius:50%;
+  object-fit:cover;object-position:top center;
+  border:4px solid #FFFFFF;
+  position:relative;z-index:2;
+  box-shadow:0 0 40px rgba(var(--gold-rgb), 0.12),0 15px 35px rgba(45, 36, 36, 0.08);
+}
+.hero-scroll{
+  position:absolute;bottom:24px;right:1vw;left:auto;
+  display:flex;align-items:center;gap:12px;
+  font-family:var(--mono);font-size:.58rem;font-weight:500;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--muted);
+  animation:fadeIn 1.5s 1s both;
+}
+.scroll-line{
+  width:1px;height:50px;background:var(--gold-bdr);
+  position:relative;overflow:hidden;
+}
+.scroll-line::after{
+  content:'';position:absolute;top:-100%;left:0;right:0;
+  height:100%;background:var(--gold-dk);
+  animation:scrollDrop 2.2s ease-in-out infinite;
+}
+@keyframes scrollDrop{0%{top:-100%}60%{top:100%}100%{top:100%}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+/* ══════════════════════════════════════════════
+   ABOUT
+══════════════════════════════════════════════ */
+#about{padding:112px 7vw;background:linear-gradient(180deg,var(--bg) 0%,var(--bg2) 50%,var(--bg) 100%);}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
+.about-quote-block{
+  padding:26px 26px 20px 20px;
+  border-left:3px solid var(--gold);
+  border-radius:0 var(--r) var(--r) 0;
+  border-top:1px solid var(--gold-bdr2);
+  border-right:1px solid var(--gold-bdr2);
+  border-bottom:1px solid var(--gold-bdr2);
+  background:var(--surf);
+  box-shadow: 0 4px 15px rgba(45, 36, 36, 0.04);
+  margin-bottom:28px;
+}
+.about-qmark{
+  font-family:var(--serif);font-size:5rem;
+  color:rgba(var(--gold-rgb), 0.15);line-height:.65;
+  display:block;margin-bottom:12px;
+}
+.about-quote{
+  font-family:var(--serif);font-size:1.5rem;
+  font-style:italic;color:var(--text);
+  line-height:1.75;margin-bottom:10px;
+}
+.about-attr{
+  font-family:var(--mono);font-size:0.9rem;font-weight:600;
+  letter-spacing:.03em;color:var(--gold-dk);
+}
+.about-bio{font-size:.87rem;color:var(--text2);line-height:1.90;margin-bottom:14px;}
+.about-closing{
+  font-family:var(--serif);font-size:1.4rem;
+  font-style:italic;color:var(--gold-dk);font-weight:600;
+  margin-top:20px;line-height:1.6;
+}
+.value-card{
+  display:flex;gap:20px;align-items:flex-start;
+  padding:30px 18px 18px 16px;margin-bottom:12px;
+  border-left:2px solid var(--gold);
+  border-radius:0 var(--r) var(--r) 0;
+  border-top:1px solid var(--gold-bdr2);
+  border-right:1px solid var(--gold-bdr2);
+  border-bottom:1px solid var(--gold-bdr2);
+  background:var(--surf);
+  box-shadow: 0 4px 15px rgba(45, 36, 36, 0.03);
+  transition:background .3s,border-left-width .3s,box-shadow .3s;
+}
+.value-card:hover{background:var(--surf2);border-left-width:3px;box-shadow: 0 6px 20px rgba(45, 36, 36, 0.06);}
+.v-icon{font-size:1.5rem;flex-shrink:0;margin-top:2px;}
+.v-name{
+  font-family:var(--mono);font-size:.9rem;font-weight:600;
+  letter-spacing:.16em;text-transform:uppercase;
+  color:var(--gold-dk);margin-bottom:5px;
+}
+.v-desc{font-size:.9rem;color:var(--muted);line-height:1.65;}
+/* ══════════════════════════════════════════════
+   SKILLS
+══════════════════════════════════════════════ */
+#skills{padding:112px 7vw;background:var(--bg2);}
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px;}
+.skill-card{
+  padding:30px 30px;
+  border:1px solid var(--gold-bdr2);border-radius:var(--r);
+  background:var(--surf);
+  position:relative;overflow:hidden;
+  box-shadow: 0 4px 20px rgba(45, 36, 36, 0.04);
+  transition:border-color .35s,transform .35s,box-shadow .35s;
+}
+.skill-card:hover{border-color:var(--gold-bdr);transform:translateY(-5px);box-shadow: 0 12px 28px rgba(45, 36, 36, 0.08);}
+.skill-card::after{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--gold),#C29B38);
+  opacity:0;transition:opacity .35s;
+}
+.skill-card:hover::after{opacity:1;}
+.sk-icon{font-size:2rem;margin-bottom:15px;}
+.sk-title{
+  font-family:var(--serif);font-size:1.5rem;font-weight:700;
+  color:var(--gold-dk);margin-bottom:18px;
+}
+.sk-item{
+  display:flex;align-items:center;gap:9px;
+  font-size:0.89rem;color:var(--text2);
+  margin-bottom:9px;line-height:1.4;
+}
+.sk-dot{width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0;}
+/* ══════════════════════════════════════════════
+   ACADEMICS
+══════════════════════════════════════════════ */
+#academics{
+  padding:112px 7vw;
+  background:var(--bg2);
+}
+.acad-grid{
+  display:grid; 
+  grid-template-columns:repeat(3, 1fr); /* Restores the horizontal side-by-side layout */
+  gap:24px; 
+  align-items:stretch;
+  width:100%;
+}
+.acad-box{
+  padding:28px 24px;
+  border-radius:var(--r);
+  border:1px solid var(--gold-bdr);
+  background:var(--surf);
+  box-shadow: 0 4px 15px rgba(45, 36, 36, 0.04);
+  border-left: 4px solid var(--gold);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.acad-label{
+  font-family:var(--mono);font-size:.56rem;font-weight:600;
+  letter-spacing:.20em;text-transform:uppercase;
+  color:var(--gold-dk);margin-bottom:7px;
+}
+.acad-val{
+  font-family:var(--serif);font-size:1.6rem;
+  font-weight:700;color:var(--text);line-height:1.3;
+}
+.acad-sub{
+  font-size:1rem;color:var(--muted);margin-top:6px;
+}
+@media(max-width:1100px){
+  /* Other hero/about adjustments remain unchanged... */
+  .acad-grid{grid-template-columns:1fr;} /* Stacks neatly on screens under 1100px */
+}
+/* ══════════════════════════════════════════════
+   PROJECTS
+══════════════════════════════════════════════ */
+#projects{padding:100px 100px;background:var(--bg2);}
+.proj-featured{
+  display:grid;grid-template-columns:1fr 1fr;
+  border:1px solid var(--gold-bdr);border-radius:var(--r2);
+  background: var(--surf);
+  box-shadow: 0 10px 30px rgba(45, 36, 36, 0.06);
+  overflow:hidden;margin-bottom:28px;
+}
+.proj-feat-body{
+  padding:44px 40px;
+  background:var(--surf);
+  border-left:1px solid var(--gold-bdr2);
+  display:flex;flex-direction:column;justify-content:center;
+}
+.proj-badge{
+  display:inline-flex;align-items:center;gap:5px;
+  padding:5px 5px;border-radius:100px;
+  border:1px solid var(--gold-bdr);background:var(--surf2);
+  font-family:var(--mono);font-size:.70rem;font-weight:600;
+  letter-spacing:.18em;text-transform:uppercase;
+  color:var(--gold-dk);margin-bottom:20px;
+}
+.proj-title{
+  font-family:var(--serif);font-size:2.5rem;font-weight:700;
+  color:var(--text);line-height:1.1;margin-bottom:6px;
+}
+.proj-title em{color:var(--gold-dk);font-style:italic;}
+.proj-sub{
+  font-family:var(--serif);font-size:1.2rem;
+  font-style:italic;color:var(--muted);
+  margin-bottom:16px;line-height:1.5;
+}
+.proj-desc{font-size:.82rem;color:var(--text2);line-height:1.85;margin-bottom:20px;}
+.proj-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:22px;}
+.proj-outcome{
+  padding:13px 15px;border-radius:var(--r);
+  background:#F4EFE3;
+  border:1px dashed var(--gold-bdr);
+}
+.proj-outcome-lbl{
+  font-family:var(--mono);font-size:.56rem;font-weight:600;
+  letter-spacing:.18em;text-transform:uppercase;
+  color:var(--gold-dk);margin-bottom:5px;
+}
+.proj-outcome-text{font-size:.76rem;color:var(--text2);font-style:italic;line-height:1.6;}
+.feat-list{margin:24px 0 0;}
+.feat-row{
+  display:flex;gap:13px;align-items:flex-start;
+  padding:14px 0;border-bottom:1px solid var(--line);
+}
+.feat-row:last-child{border-bottom:none;}
+.feat-row-icon{font-size:1.05rem;flex-shrink:0;margin-top:3px;}
+.feat-row-title{font-size:.8rem;font-weight:600;color:var(--gold-dk);margin-bottom:3px;}
+.feat-row-desc{font-size:.75rem;color:var(--muted);line-height:1.58;}
+
+/* ══ 2-COLUMN PROJECT GRID (LEFT & RIGHT BOXES) ══ */
+.proj-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Exactly equal 50/50 split */
+  gap: 24px;
+  width: 100%;
+  margin-bottom: 28px;
+  align-items: stretch;
+}
+.proj-card {
+  border: 1px solid var(--gold-bdr);
+  border-radius: var(--r2);
+  background: var(--surf);
+  padding: 40px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 10px 30px rgba(45, 36, 36, 0.04);
+  transition: border-color 0.35s var(--ease), transform 0.35s var(--ease), box-shadow 0.35s;
+  position: relative;
+  overflow: hidden;
+}
+.proj-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), #C29B38);
+  opacity: 0;
+  transition: opacity 0.35s;
+}
+.proj-card:hover {
+  border-color: var(--gold);
+  background: var(--surf2);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(45, 36, 36, 0.08);
+}
+.proj-card:hover::before {
+  opacity: 1;
+}
+
+/* Responsive: Stacks vertically on tablet and mobile screens */
+@media (max-width: 960px) {
+  #projects {
+    padding: 80px 7vw; /* Adjusts 100px padding down for smaller screens */
+  }
+  .proj-grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ══════════════════════════════════════════════
+   CERTIFICATES / AWARDS
+══════════════════════════════════════════════ */
+#certificates {
+  padding: 112px 7vw;
+}
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.cert-card {
+  border: 1px solid var(--gold-bdr2);
+  border-radius: var(--r);
+  background: var(--surf);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(45, 36, 36, 0.04);
+  transition: border-color .35s, transform .35s, box-shadow .35s;
+}
+.cert-card:hover {
+  border-color: var(--gold-bdr);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(45, 36, 36, 0.08);
+}
+.cert-img-wrap {
+  height: 240px;
+  overflow: hidden;
+  background: var(--bg2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.cert-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 12px;
+  transition: transform .55s var(--ease);
+}
+.cert-card:hover .cert-img-wrap img {
+  transform: scale(1.04);
+}
+.cert-img-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 60%, var(--surf) 100%);
+  pointer-events: none;
+}
+.cert-body {
+  padding: 22px 22px 24px;
+}
+.cert-eyebrow {
+  font-family: var(--mono);
+  font-size: .58rem;
+  font-weight: 600;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+.cert-title {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px;
+  line-height: 1.25;
+}
+.cert-desc {
+  font-size: .78rem;
+  color: var(--muted);
+  line-height: 1.68;
+}
+.cert-meta {
+  font-family: var(--mono);
+  font-size: .62rem;
+  font-weight: 600;
+  color: var(--gold-dk);
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* Responsive Media Queries for Certificates */
+@media (max-width: 960px) {
+  .cert-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* ══ GALLERY SECTION ══ */
+#gallery {
+  padding: 80px 7vw;
+}
+.gallery-quote {
+  font-size: 1.1rem;
+  color: var(--muted);
+  font-style: italic;
+  text-align: left;
+  margin-bottom: 30px;
+}
+/* Equal Side-by-Side Split Row */
+.gal-row-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Exactly equal 50/50 width */
+  gap: 20px; /* Small gap between photos */
+  width: 100%;
+  margin-bottom: 20px;
+}
+.gal-row-split .gal-item {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Forces exact same height and width ratio */
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px; /* Optional clean edge */
+}
+.gal-row-split img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Prevents stretching or distortion */
+  display: block;
+  transition: transform 0.4s ease;
+}
+/* Hover Zoom Effect */
+.gal-row-split .gal-item:hover img {
+  transform: scale(1.05);
+}
+/* Classic Oxford Overlay */
+.gal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(var(--gold-rgb), 0.85) 0%, rgba(0,0,0,0) 60%); /* maroon accent */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
+.gal-row-split .gal-item:hover .gal-overlay {
+  opacity: 1;
+}
+.gal-caption {
+  color: var(--bg); /* Beige text */
+  font-family: 'Georgia', serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+/* Mobile Responsiveness: Stacks to 1 column on small screens */
+@media (max-width: 768px) {
+  .gal-row-split {
+    grid-template-columns: 1fr;
+  }
+}
+/* ══════════════════════════════════════════════
+   LEADERSHIP
+══════════════════════════════════════════════ */
+#leadership{padding:112px 7vw;}
+/* ══════════════════════════════════════════════
+   WORKSHOPS TIMELINE
+══════════════════════════════════════════════ */
+#workshops{padding:112px 7vw;background:var(--bg2);}
+.timeline{position:relative;}
+.timeline::before{
+  content:'';position:absolute;left:22px;top:10px;bottom:10px;
+  width:2px;background:linear-gradient(180deg,transparent,var(--gold-bdr),transparent);
+}
+.tl-item{display:flex;gap:28px;margin-bottom:20px;}
+.tl-dot{
+  width:44px;height:44px;border-radius:50%;
+  border:1px solid var(--gold-bdr);background:var(--surf);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.95rem;flex-shrink:0;position:relative;z-index:1;
+  box-shadow: 0 2px 8px rgba(45, 36, 36, 0.08);
+  transition:background .3s,transform .3s;
+}
+.tl-item:hover .tl-dot{background:var(--surf2);transform:scale(1.05);}
+.tl-body{
+  flex:1;padding:22px 24px;
+  border:1px solid var(--gold-bdr2);border-radius:var(--r);
+  background:var(--surf);
+  box-shadow: 0 4px 15px rgba(45, 36, 36, 0.04);
+  transition:border-color .3s,background .3s,box-shadow .3s;
+}
+.tl-item:hover .tl-body{border-color:var(--gold-bdr);background:var(--surf2);box-shadow: 0 8px 22px rgba(45, 36, 36, 0.08);}
+.tl-date{
+  font-family:var(--mono);font-size:.58rem;font-weight:600;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--gold-dk);margin-bottom:5px;
+}
+.tl-title{
+  font-family:var(--serif);font-size:1.1rem;font-weight:700;
+  color:var(--text);margin-bottom:4px;
+}
+.tl-org{font-size:.9rem;color:var(--text2);margin-bottom:9px;font-weight:600;}
+.tl-desc{font-size:.8rem;color:var(--muted);line-height:1.72;margin-bottom:11px;}
+.tl-tags{display:flex;flex-wrap:wrap;gap:5px;}
+/* ══════════════════════════════════════════════
+   CONTACT / FOOTER
+══════════════════════════════════════════════ */
+#contact{
+  padding:112px 7vw 80px;
+  background:var(--bg2);position:relative;overflow:hidden;
+}
+#contact::before{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(ellipse at 50% 90%,rgba(var(--gold-rgb), 0.08) 0%,transparent 55%);
+}
+.contact-inner{
+  max-width:860px;margin:0 auto;
+  text-align:center;position:relative;z-index:1;
+}
+.contact-h{
+  font-family:var(--serif);
+  font-size:clamp(2rem,4vw,3rem);
+  font-weight:700;color:var(--text);margin-bottom:12px;line-height:1.15;
+}
+.contact-h em{font-style:italic;color:var(--gold-dk);}
+.contact-sub{
+  font-size:.95rem;color:var(--text2);
+  max-width:520px;margin:0 auto 12px;line-height:1.82;
+}
+.contact-note{
+  font-family:var(--serif);font-style:italic;font-weight:600;
+  font-size:1.5rem;color:var(--gold-dk);
+  margin-bottom:48px;line-height:1.75;
+}
+.contact-cards{
+  display:grid;grid-template-columns:repeat(2,1fr);
+  gap:16px;max-width:600px;margin:0 auto 28px;
+}
+.contact-card{
+  padding:22px 14px;border-radius:var(--r);text-align:center;
+  border:1px solid var(--gold-bdr2);background:var(--surf);
+  box-shadow: 0 4px 15px rgba(45, 36, 36, 0.04);
+  transition:border-color .3s,background .3s,transform .3s,box-shadow .3s;
+}
+.contact-card:hover{
+  border-color:var(--gold);background:var(--surf2);
+  transform:translateY(-4px);box-shadow: 0 8px 22px rgba(45, 36, 36, 0.08);
+}
+.cc-icon{font-size:1.4rem;margin-bottom:9px;}
+.cc-lbl{
+  font-family:var(--mono);font-size:.56rem;font-weight:600;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--gold-dk);display:block;margin-bottom:5px;
+}
+.cc-val{font-size:.76rem;color:var(--text);word-break:break-all;font-weight:600;}
+.contact-loc{font-size:.76rem;color:var(--muted);font-weight:600;}
+.contact-loc span{color:var(--gold-dk);font-weight:700;}
+footer{
+  border-top:1px solid var(--gold-bdr2);
+  padding:26px 7vw;
+  display:flex;align-items:center;justify-content:space-between;
+  flex-wrap:wrap;gap:12px;background:var(--surf);
+}
+.foot-brand{
+  font-family:var(--serif);font-size:1.1rem;
+  font-weight:700;color:var(--text);
+}
+.foot-brand em{font-style:italic;color:var(--gold-dk);}
+.foot-links{display:flex;gap:20px;}
+.foot-links a{
+  font-family:var(--mono);font-size:.60rem;font-weight:600;
+  letter-spacing:.12em;text-transform:uppercase;
+  color:var(--muted);transition:color .3s;
+}
+.foot-links a:hover{color:var(--gold-dk);}
+.foot-copy{
+  font-family:var(--mono);font-size:.60rem;font-weight:600;
+  color:var(--muted);
+}
+#back-top{
+  position:fixed;bottom:28px;right:28px;z-index:500;
+  width:42px;height:42px;border-radius:50%;
+  background:var(--surf);border:1px solid var(--gold-bdr);
+  color:var(--gold-dk);font-size:1.00rem;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow: 0 4px 15px rgba(var(--gold-rgb), 0.15);
+  opacity:0;pointer-events:none;
+  transition:opacity .3s,transform .3s,background .3s,box-shadow .3s;
+}
+#back-top.show{opacity:1;pointer-events:all;}
+#back-top:hover{background:var(--gold);color:#FFFFFF;transform:translateY(-3px);box-shadow: 0 6px 20px rgba(var(--gold-rgb), 0.25);}
+/* ══════════════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════════════ */
+@media(max-width:1100px){
+  .hero-layout{grid-template-columns:1fr;gap:40px;text-align:center;}
+  .photo-ring{width:300px;height:300px;margin:0 auto;}
+  .ring-1{width:280px;height:280px;}
+  .ring-2{width:230px;height:230px;}
+  .ring-3{width:190px;height:190px;}
+  .hero-img{width:200px;height:200px;}
+  .hero-pills,.hero-cta{justify-content:center;}
+  .hero-tagline,.hero-sub{margin-inline:auto;}
+  .about-grid{grid-template-columns:1fr;}
+  .acad-grid{grid-template-columns:1fr;}
+}
+@media(max-width:960px){
+  .skills-grid{grid-template-columns:1fr;}
+  .proj-featured{grid-template-columns:1fr;}
+  .cert-grid{grid-template-columns:1fr 1fr;}
+  .contact-cards{grid-template-columns:1fr 1fr;}
+  .nav-links,.nav-btn{display:none;}
+  .nav-ham{display:flex;}
+}
+@media(max-width:600px){
+  :root{--nav-h:64px;}
+  .cert-grid{grid-template-columns:1fr;}
+  .contact-cards{grid-template-columns:1fr;}
+  footer{flex-direction:column;text-align:center;}
+  .foot-links{flex-wrap:wrap;justify-content:center;}
+  #back-top{right:16px;bottom:16px;}
+}
+</style>
+</head>
+<body>
+<!-- ── PROGRESS BAR ── -->
+<div id="prog"></div>
+<!-- ══════════════════════════════════════════
+     NAVIGATION
+══════════════════════════════════════════ -->
+<nav id="nav">
+  <a href="#hero" class="nav-logo">Kashish Jaiswal</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#academics">Academics</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certificates">Awards</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#leadership">Leadership</a></li>
+    <li><a href="#workshops">Workshops</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <!-- mailto: replaced with standard section link -->
+  <a href="#contact" class="nav-btn">Connect</a>
+  <button class="nav-ham" id="hamBtn" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<!-- Mobile menu -->
+<div id="mob-menu">
+  <a href="#about"        onclick="closeMob()">About</a>
+  <a href="#skills"       onclick="closeMob()">Skills</a>
+  <a href="#academics"    onclick="closeMob()">Academics</a>
+  <a href="#projects"     onclick="closeMob()">Projects</a>
+  <a href="#certificates" onclick="closeMob()">Awards</a>
+  <a href="#gallery"      onclick="closeMob()">Gallery</a>
+  <a href="#leadership"   onclick="closeMob()">Leadership</a>
+  <a href="#workshops"    onclick="closeMob()">Workshops</a>
+  <a href="#contact"      onclick="closeMob()">Contact</a>
+</div>
+<!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-layout">
+    <div class="hero-inner">
+      <div class="hero-eyebrow">Personal Portfolio · 2025–26</div>
+      <h1 class="hero-name">Kashish Jaiswal</h1>
+      <p class="hero-tagline">
+        To bring the change, be the change.
+      </p>
+      <div class="hero-pills">
+        <span class="pill">Class XII · Liberal Arts</span>
+        <span class="pill">Sunbeam School Mughalsarai</span>
+        <span class="pill">President · Debate Club</span>
+        <span class="pill">National Level Debater</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-gold">Explore Projects</a>
+        <a href="#contact"  class="btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+    
+    <!-- Photo with parallel rings -->
+    <div class="photo-ring">
+      <div class="ring ring-1"></div>
+      <div class="ring ring-2"></div>
+      <div class="ring ring-3"></div>
+      <img src="assets/Gallery Photos/WhatsApp Image 2026-07-27 at 11.05.22 AM.jpeg" alt="Kashish Jaiswal" class="hero-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div style="display:none;width:200px;height:200px;border-radius:50%;border:2px solid var(--gold-bdr);background:var(--surf);align-items:center;justify-content:center;font-size:4rem;z-index:2;position:relative;">🧑‍💻</div>
+    </div>
+  </div>
+  
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    Scroll to explore
+  </div>
+</section>
+<div class="section-divider"></div>
+<!-- ══════════════════════════════════════════
+     ABOUT
+══════════════════════════════════════════ -->
+<section id="about">
+  <div class="about-grid">
+    <div>
+      <div class="eyebrow reveal" style="margin-bottom:16px;">Philosophy &amp; Identity</div>
+      <h2 class="h-display reveal" style="margin-bottom:20px;">
+        Core <em>Philosophy</em>
+      </h2>
+      <div class="about-quote-block reveal">
+        <span class="about-qmark">"</span>
+        <p class="about-quote">"Give a man a fish and he will eat for a day; teach him how to fish and he will eat for a lifetime, but before either can happen, someone must first ensure he has the access to a fishing rod."</p>
+        <p class="about-attr">— Trevor Noah</p>
+      </div>
+      <p class="about-closing reveal">"The value of my journey lies not only in the heights I reach, but in the opportunities I create for others to rise."</p>
+    </div>
+    
+    <div>
+      <div class="h-display reveal" style="font-size:3.5rem;margin-bottom:22px; margin-top:90px;">Core Skills</div>
+      <div class="value-card reveal d1">
+        <div class="v-icon">🧠</div>
+        <div>
+          <div class="v-name">Critical Thinking</div>
+          <div class="v-desc">Approaching ideas with curiosity and analysis questioning assumptions, evaluating perspectives, and forming informed opinions.</div>
+        </div>
+      </div>
+      <div class="value-card reveal d2">
+        <div class="v-icon">🗣️</div>
+        <div>
+          <div class="v-name">Expression</div>
+          <div class="v-desc">Using debate, writing, and communication as tools to articulate ideas, amplify voices, and foster meaningful conversations.</div>
+        </div>
+      </div>
+      <div class="value-card reveal d3">
+        <div class="v-icon">🔎</div>
+        <div>
+          <div class="v-name">Research & Analysis</div>
+          <div class="v-desc">Investigating complex issues through evidence, diverse perspectives, and analytical thinking to understand the stories behind the data.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="section-divider"></div>
+<!-- ══════════════════════════════════════════
+     SKILLS
+══════════════════════════════════════════ -->
+<section id="skills">
+  <div class="eyebrow reveal" style="margin-bottom:16px;">Competencies</div>
+  <h2 class="h-display reveal">Core <em>Competencies</em></h2>
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <div class="sk-title">Mentorship &amp; Training</div>
+      <div class="sk-item"><div class="sk-dot"></div>Conducted debate bootcamps and 1-on-1 mentorship sessions.</div>
+      <div class="sk-item"><div class="sk-dot"></div>Trained 20+ young speakers.</div>
+      <div class="sk-item"><div class="sk-dot"></div>Organized and executed 7+ debate tournaments and events.</div>
+      <div class="sk-item"><div class="sk-dot"></div>Hosted weekly training sessions for continuous skill development.</div>
+    </div>
+    <div class="skill-card reveal d1">
+      <div class="sk-title">Research &amp; Analytical Thinking</div>
+      <div class="sk-item"><div class="sk-dot"></div>Investigated critical issues in public policy, climate change, tech, and society.</div>
+      <div class="sk-item"><div class="sk-dot"></div>Wrote and contributed articles to 3+ school newsletters.</div>
+      <div class="sk-item"><div class="sk-dot"></div>Correlated and statistically validated complex information.</div>
+      <div class="sk-item"><div class="sk-dot"></div>Made complex topics clear and relatable.</div>
+    </div>
+    <div class="skill-card reveal d2">
+      <div class="sk-title">Event Management &amp; Execution</div>
+      <div class="sk-item"><div class="sk-dot"></div>Conceptualized, organized, and executed 7+ major events.</div>
+      <div class="sk-item"><div class="sk-dot"></div>Managed diverse formats including debates, workshops, bootcamps, and training sessions.</div>
+      <div class="sk-item"><div class="sk-dot"></div>Directed event logistics, team workflows, and collaborative partnerships.</div>
+      <div class="sk-item"><div class="sk-dot"></div>Drove active and sustained participant engagement.</div>
+    </div>
+  </div>
+</section>
+<div class="section-divider"></div>
+<!-- ══════════════════════════════════════════
+     ACADEMICS
+══════════════════════════════════════════ -->
+<section id="academics" style="background:var(--bg2);">
+  <div class="eyebrow reveal" style="margin-bottom:16px;">Academic Record</div>
+  <h2 class="h-display reveal">Academic <em>Excellence</em></h2>
+  <p class="body-lg reveal" style="max-width:520px;margin:12px 0 36px;">A rigorous academic foundation in Liberal Arts, anchored by Distinction-level performance in Social Science.</p>
+  <div class="acad-grid">
+    <div class="acad-box reveal">
+      <div class="acad-label">Institution</div>
+      <div class="acad-val">Sunbeam School Mughalsarai</div>
+      <div class="acad-sub">CBSE Board · Varanasi Division, Uttar Pradesh</div>
+    </div>
+    <div class="acad-box reveal d1">
+      <div class="acad-label">Current Class &amp; Stream</div>
+      <div class="acad-val">Class XII · Liberal Arts</div>
+      <div class="acad-sub">History, Political Science, English + Applied Mathematics</div>
+    </div>
+    <div class="acad-box reveal d2">
+      <div class="acad-label">Class 10 Board Highlights</div>
+      <div class="acad-val">CBSE Class X Board Examination, 2024-25</div>
+      <div class="acad-sub">Percentage - 95.2%</div>
+    </div>
+      <div class="acad-box reveal d2">
+      <div class="acad-label">Global Excellence Exam</div>
+      <div class="acad-val">International French Competition - Concours Romain Rolland & French Word Power, 2023-24</div>
+      <div class="acad-sub">National Level - Rank 202</div>
+    </div>
+      <div class="acad-box reveal d2">
+      <div class="acad-label">Global Excellence Exam</div>
+      <div class="acad-val">International French Competition - Concours Romain Rolland & French Word Power, 2024-25</div>
+      <div class="acad-sub">National Level - Rank 47</div>
+    </div>
+  </div>
+</section>
+<div class="section-divider"></div>
+<!-- ══════════════════════════════════════════
+     PROJECTS (LEFT & RIGHT TWO-COLUMN GRID)
+══════════════════════════════════════════ -->
+<section id="projects">
+  <div class="eyebrow reveal" style="margin-bottom:16px;">Portfolio</div>
+  <h2 class="h-display reveal">Ideas, Insights &amp; <em>Impact</em></h2>
+  <p class="body-lg reveal" style="max-width:520px;margin:12px 0 44px;">A glimpse  into ,research writings exploring human behaviour, mindsets, and social change. These papers reflect my journey of analysing ideas, perspectives, and the factors that shape individuals and communities.</p>
+  
+  <!-- Side-by-Side Project Cards -->
+  <div class="proj-grid-2 reveal">
+    
+    <!-- BOX 1 (LEFT): Technical Prototype -->
+    <div class="proj-card">
+      <div>
+        <div class="proj-badge">✍️ Research · Content Writing</div>
+        <h3 class="proj-title">Be a Rebel</h3>
+        <p class="proj-sub">Dromomaniac</p>
+        <p class="proj-desc">This paper was written during my internships with WeDidIt and Middlemen Asia under the mentorship of author Shree Krishna Seelam . It presents my analytical reflections on two of his works, exploring themes of self-discovery through travel and the significance of mental health, while demonstrating critical thinking and thoughtful literary analysis.</p>
+      </div>
+        <a href="assets/5 KILLER HABITS- BE A REBEL (1).pdf" target="_blank" rel="noopener" class="btn-ghost" style="margin-top: 16px; width: fit-content;">
+          📄 View Project PDF
+        </a>
+    </div>
+
+    <!-- BOX 2 (RIGHT): Research & Content Writing -->
+    <div class="proj-card">
+      <div>
+        <div class="proj-badge">✍️ Research · Content Writing</div>
+        <h3 class="proj-title" style="font-size: 2.1rem;">Communicating a Crisis</h3>
+        <p class="proj-sub">The Attenborough Effect</p>
+        <p class="proj-desc">Communication has the power to transform information into action. This piece explores how one of the world's most influential communicators, Sir David Attenborough, used storytelling, journalism, and visual media to shape global conversations on climate change, inspire awareness, and drive collective action.</p>
+      </div>
+    
+        <a href="assets/Untitled document.pdf" target="_blank" rel="noopener" class="btn-ghost" style="margin-top: 16px; width: fit-content;">
+          📄 View Project PDF
+        </a>
+    </div>
+
+  </div>
+</section>
+<!-- ══════════════════════════════════════════
+     CERTIFICATES / AWARDS
+══════════════════════════════════════════ -->
+<section id="certificates" style="background:var(--bg2);">
+  <div class="eyebrow reveal" style="margin-bottom:16px;">Recognition</div>
+  <h2 class="h-display reveal">Awards &amp; <em>Certificates</em></h2>
+  <p class="body-lg reveal" style="max-width:520px;margin:12px 0 44px;">Accolades and Major participations from prestigious educational institutions across India.</p>
+  
+  <div class="cert-grid" style="margin-bottom:36px;">
+    <!-- 1. BEST SPEAKER in DEBATE SEMI - FINALS and BEST RESEARCH DELEGATION -->
+    <div class="cert-card reveal">
+      <div class="cert-img-wrap">
+        <img src="assets/Awards and Cerificates/WhatsApp Image 2026-07-27 at 9.24.46 AM (1).jpeg" alt="BEST SPEAKER in DEBATE SEMI - FINALS and BEST RESEARCH DELEGATION" onerror="this.style.background='var(--surf2)';this.style.display='flex';"/>
+      </div>
+      <div class="cert-body">
+        <div class="cert-eyebrow">🏅 National Level · Debate</div>
+        <div class="cert-title">BEST SPEAKER in DEBATE SEMI - FINALS and BEST RESEARCH DELEGATION</div>
+        <div class="cert-meta">Pratidhwani Conclave × Sarla Birla Public School, Ranchi</div>
+      </div>
+    </div>
+    
+    <!-- 2. BEST RESEARCH DELEGATION -->
+    <div class="cert-card reveal d1">
+      <div class="cert-img-wrap">
+        <img src="assets/Awards and Cerificates/WhatsApp Image 2026-07-27 at 9.24.46 AM.jpeg" alt="BEST RESEARCH DELEGATION" onerror="this.style.display='none'"/>
+      </div>
+      <div class="cert-body">
+        <div class="cert-eyebrow">🏆 National Level · Debate</div>
+        <div class="cert-title">BEST RESEARCH DELEGATION</div>
+        <div class="cert-desc">Awarded for excellence in research quality, preparation, and depth of understanding of debate topics.</div>
+        <div class="cert-meta">Sri JK Kate Memorial All India Inter-school Knowledge Conclave · Punjab Public School</div>
+      </div>
+    </div>
+    
+    <!-- 3. Best Speaker SEMI - FINALS -->
+    <div class="cert-card reveal d2">
+      <div class="cert-img-wrap">
+        <img src="assets/Awards and Cerificates/WhatsApp Image 2026-07-27 at 9.24.45 AM.jpeg" alt="Best Speaker SEMI - FINALS" onerror="this.style.display='none'"/>
+      </div>
+      <div class="cert-body">
+        <div class="cert-eyebrow">🎙️ National Level · Debate</div>
+        <div class="cert-title">Best Speaker SEMI - FINALS</div>
+        <div class="cert-desc">Awarded Best Speaker in the Semi-Final round among 17 participating teams. Received a mid-speech ovation for a compelling and memorable performance.</div>
+        <div class="cert-meta">Kanchanjunga Lit Fest, 2024 · Paljor Namgyal Girls School</div>
+      </div>
+    </div>
+    
+    <!-- 4. Best Interjector -->
+    <div class="cert-card reveal">
+      <div class="cert-img-wrap">
+        <img src="assets/IMG_9209.JPG" alt="Best Interjector" onerror="this.style.background='var(--surf2)';this.style.display='flex';"/>
+      </div>
+      <div class="cert-body">
+        <div class="cert-eyebrow">🗣️ National Level · Debate</div>
+        <div class="cert-title">Best Interjector</div>
+        <div class="cert-meta">8th "Jim Corbett - Pt. G.B. Pant - F.G. Pearce Memorial Annual Young Ideators' Conclave (AYIC) 2025 · Birla Vidya Mandir, Nainital</div>
+      </div>
+    </div>
+    
+    <!-- 5. Winner -->
+    <div class="cert-card reveal d1">
+      <div class="cert-img-wrap">
+        <img src="assets/Awards and Cerificates/WhatsApp Image 2026-07-25 at 11.47.04 AM.jpeg" alt="Winner" onerror="this.style.background='var(--surf2)';this.style.display='flex';"/>
+      </div>
+      <div class="cert-body">
+        <div class="cert-eyebrow">🤝 National Level · Debate</div>
+        <div class="cert-title">1st Position Senior Category</div>
+        <div class="cert-meta">Annual Summer Workshop & Speech Competition - DebSoc · The Hindu College, University of Delhi, 2025</div>
+      </div>
+    </div>
+    
+    <!-- 6. National Schools Debating Tournament, DU -->
+    <div class="cert-card reveal d2">
+      <div class="cert-img-wrap">
+        <img src="assets/IMG_9193.JPG" alt="National Schools Debating Tournament, DU " onerror="this.style.background='var(--surf2)';this.style.display='flex';"/>
+      </div>
+      <div class="cert-body">
+        <div class="cert-eyebrow">🎯 National Level · Debate</div>
+        <div class="cert-title">Finalist</div>
+        <div class="cert-desc">Ranked among the top teams competing from 60+ national participants demonstrating strong research, teamwork, and competitive debating skills.</div>
+        <div class="cert-meta">National Schools Debating Tournament - DebSoc· The Hindu College, University of Delhi</div>
+      </div>
+    </div>
+    
+    <!-- 7. Hansraj Global Schools Debating Championship -->
+    <div class="cert-card reveal">
+      <div class="cert-img-wrap">
+        <img src="assets/Awards and Cerificates/WhatsApp Image 2026-07-25 at 11.51.43 AM.jpeg" alt=" Hansraj Global Schools Debating Championship" onerror="this.style.background='var(--surf2)';this.style.display='flex';"/>
+      </div>
+      <div class="cert-body">
+        <div class="cert-eyebrow">🥈 National Level · Debate</div>
+        <div class="cert-title">2nd Runner-Up | 2nd Best Interjector</div>
+        <div class="cert-desc">Recognized across two distinct categories for strategic engagement, sharp rebuttals, and impactful participation throughout the tournament.</div>
+        <div class="cert-meta">Hansraj Global Schools Debating Championship - Debsoc · University of Delhi</div>
+      </div>
+    </div>
+    
+    <!-- 8. AWAAZ National Schools Debating Championship -->
+    <div class="cert-card reveal d1">
+      <div class="cert-img-wrap">
+        <img src="assets/Awards and Cerificates/WhatsApp Image 2026-07-25 at 11.51.01 AM.jpeg" alt="AWAAZ National Schools Debating Championship" onerror="this.style.background='var(--surf2)';this.style.display='flex';"/>
+      </div>
+      <div class="cert-body">
+        <div class="cert-eyebrow">🎖️ National Level · Debate</div>
+        <div class="cert-title">Best Speaker - Round 3</div>
+        <div class="cert-desc">Awarded for exceptional individual performance, persuasive delivery, and analytical depth during the competitive rounds.</div>
+        <div class="cert-meta">AWAAZ National Schools Debating Championship</div>
+      </div>
+    </div>
+    
+    <!-- 9. Ramjas Debate -->
+    <div class="cert-card reveal d2">
+      <div class="cert-img-wrap">
+        <img src="assets/Awards and Cerificates/WhatsApp Image 2026-07-27 at 9.24.47 AM.jpeg" alt=" Ramjas Debate" onerror="this.style.background='var(--surf2)';this.style.display='flex';"/>
+      </div>
+      <div class="cert-body">
+        <div class="cert-eyebrow">🥇 National Level · Debate</div>
+        <div class="cert-title">Outstanding Speaker — Preliminary Rounds</div>
+        <div class="cert-desc">Honored for demonstrating strong argument construction, articulation, and consistency among participating speakers.</div>
+        <div class="cert-meta">Ramjas Debate · Ramjas School, New Delhi</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ══════════════════════════════════════════════
+     GALLERY
+══════════════════════════════════════════════ -->
+<section id="gallery">
+  <h2 class="h-display reveal">Visual <em>Narratives</em></h2>
+  <p class="gallery-quote reveal">"A collection of moments full conversations and experiences that shape and mould us."</p>
+  
+  <!-- Row 1: Two Equal Side-by-Side Images -->
+  <div class="gal-row-split reveal">
+    <div class="gal-item">
+      <img src="assets/Gallery Photos/WhatsApp Image 2026-07-27 at 10.48.49 AM (1).jpeg" alt="Temple Tower at Night" loading="lazy">
+      <div class="gal-overlay"><span class="gal-caption">Kanchanjunga Lit Fest, Gangtok</span></div>
+    </div>
+    <div class="gal-item">
+      <img src="assets/Gallery Photos/WhatsApp Image 2026-07-27 at 10.48.49 AM (2).jpeg" alt="Train tracks and clouds" loading="lazy">
+      <div class="gal-overlay"><span class="gal-caption">Birla Vidya Mandir, Nainital</span></div>
+    </div>
+  </div>
+  <!-- Row 2: Two Equal Side-by-Side Images -->
+  <div class="gal-row-split reveal">
+    <div class="gal-item">
+      <img src="assets/Gallery Photos/WhatsApp Image 2026-07-27 at 10.48.49 AM.jpeg" alt="Glasses on an open book" loading="lazy">
+      <div class="gal-overlay"><span class="gal-caption">Sarla Birla Public School, Ranchi</span></div>
+    </div>
+    <div class="gal-item">
+      <img src="assets/Gallery Photos/WhatsApp Image 2026-07-27 at 10.48.50 AM (1).jpeg" alt="Temple Entrance at Night" loading="lazy">
+      <div class="gal-overlay"><span class="gal-caption">Mayo College Girls School, Ajmer</span></div>
+    </div>
+  </div>
+  <!-- Row 3: Two Equal Side-by-Side Images -->
+  <div class="gal-row-split reveal">
+    <div class="gal-item">
+      <img src="assets/Gallery Photos/WhatsApp Image 2026-07-27 at 10.48.50 AM (2).jpeg" alt="Green Leaves in Sunlight" loading="lazy">
+      <div class="gal-overlay"><span class="gal-caption">Punjab Public School, Nabha</span></div>
+    </div>
+    <div class="gal-item">
+      <img src="assets/Gallery Photos/WhatsApp Image 2026-07-27 at 10.48.50 AM.jpeg" alt="Yellow Rose" loading="lazy">
+      <div class="gal-overlay"><span class="gal-caption">Ramjas School, New Dehli</span></div>
+    </div>
+  </div>
+    <!-- Row 4: Two Equal Side-by-Side Images -->
+  <div class="gal-row-split reveal">
+    <div class="gal-item">
+      <img src="assets/Gallery Photos/WhatsApp Image 2026-07-27 at 10.48.51 AM (1).jpeg" alt="Green Leaves in Sunlight" loading="lazy">
+      <div class="gal-overlay"><span class="gal-caption">Sarla Birla Public School, 2024</span></div>
+    </div>
+    <div class="gal-item">
+      <img src="assets/Gallery Photos/WhatsApp Image 2026-07-27 at 10.48.51 AM.jpeg" alt="Yellow Rose" loading="lazy">
+      <div class="gal-overlay"><span class="gal-caption">Paljor Nangyal, Gangtok</span></div>
+    </div>
+  </div>
+</section>
+<!-- ══════════════════════════════════════════
+     LEADERSHIP
+══════════════════════════════════════════ -->
+<section id="leadership" style="background:var(--bg2);">
+  <div class="eyebrow reveal" style="margin-bottom:16px;">Roles &amp; Responsibilities</div>
+  <h2 class="h-display reveal">Leadership &amp; <em>Collaboration</em></h2>
+  <p class="body-lg reveal" style="max-width:520px;margin:12px 0 44px;">Formal leadership positions combined with active collaboration on major institutional events.</p>
+  
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-bottom:28px;" class="reveal">
+    <div class="card" style="padding:30px 28px;">
+      <div style="font-size:1.8rem;margin-bottom:14px;">🎙️</div>
+      <div style="font-family:var(--mono);font-size:.58rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-dk);margin-bottom:8px;">Current Role · 2025–26 · Ongoing</div>
+      <div style="font-family:var(--serif);font-size:1.3rem;font-weight:700;color:var(--text);margin-bottom:5px;">Public Speaking Captain</div>
+      <div style="font-size:.78rem;color:var(--muted);font-weight:600;font-style:italic;margin-bottom:12px;">Sunbeam School Mughalsarai</div>
+      <div style="font-size:.82rem;color:var(--text2);line-height:1.75;">Led initiatives to strengthen public speaking culture, mentoring students in communication, confidence, and effective expression while creating platforms for young speakers to grow.</div>
+    </div>
+    <div class="card" style="padding:30px 28px;">
+      <div style="font-size:1.8rem;margin-bottom:14px;">🎙️</div>
+      <div style="font-family:var(--mono);font-size:.58rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-dk);margin-bottom:8px;">Appointed Role · Academic Session 2024–25</div>
+      <div style="font-family:var(--serif);font-size:1.3rem;font-weight:700;color:var(--text);margin-bottom:5px;">Founder & President - Debate Club</div>
+      <div style="font-size:.78rem;color:var(--muted);font-weight:600;font-style:italic;margin-bottom:12px;">Sunbeam School Mughalsarai</div>
+      <div style="font-size:.82rem;color:var(--text2);line-height:1.75;">Founded and led CRUX, fostering a culture of debate, critical thinking, and effective communication. Built a platform for students through structured training sessions, workshops, competitions, and national-level exposure opportunities while mentoring young speakers to develop confidence and articulate their perspectives.</div>
+    </div>
+  </div>
+  
+  <div style="display:flex;gap:22px;align-items:center;padding:26px 28px;border-radius:var(--r);border:1px solid var(--gold-bdr);background:var(--surf);box-shadow: 0 4px 15px rgba(45, 36, 36, 0.04);" class="reveal">
+    <div style="font-size:2.2rem;flex-shrink:0;">🌐</div>
+    <div>
+      <div style="font-family:var(--serif);font-size:1.2rem;font-weight:700;color:var(--gold-dk);margin-bottom:5px;">Indian Debating League – Ambassador</div>
+      <div style="font-size:.82rem;color:var(--text2);line-height:1.72;">Advocating for greater accessibility in debating by connecting students with opportunities, encouraging participation, and inspiring a new generation of critical thinkers and confident communicators.</div>
+    </div>
+  </div>
+  <div style="display:flex;gap:22px;align-items:center;padding:26px 28px;border-radius:var(--r);border:1px solid var(--gold-bdr);background:var(--surf);box-shadow: 0 4px 15px rgba(45, 36, 36, 0.04);" class="reveal">
+    <div style="font-size:2.2rem;flex-shrink:0;">🏛️</div>
+    <div>
+      <div style="font-family:var(--serif);font-size:1.2rem;font-weight:700;color:var(--gold-dk);margin-bottom:5px;">Debaters of India – Co-Chapter Head, Varanasi</div>
+      <div style="font-size:.82rem;color:var(--text2);line-height:1.72;">Driving the expansion of debate culture in Tier II and Tier III cities through outreach, mentorship, and collaborations with schools and institutions, with the aim of making quality debating opportunities accessible to every aspiring speaker.</div>
+    </div>
+  </div>
+</section>
+<div class="section-divider"></div>
+<!-- ══════════════════════════════════════════
+     WORKSHOPS & INTERNSHIPS
+══════════════════════════════════════════ -->
+<section id="workshops">
+  <div class="eyebrow reveal" style="margin-bottom:16px;">Certifications &amp; Training</div>
+  <h2 class="h-display reveal">Workshops &amp; <em>Internships</em></h2>
+  <p class="body-lg reveal" style="max-width:520px;margin:12px 0 44px;">Formal training, certifications, and intensive programmes that go beyond the classroom curriculum.</p>
+  <div class="timeline">
+    
+    <!-- Item 1: Debate & Theatre -->
+    <div class="tl-item reveal">
+      <div class="tl-left"><div class="tl-dot">🗣️</div></div>
+      <div class="tl-body">
+        <div class="tl-date">2023 · 5-day Intensive</div>
+        <div class="tl-title">Debate &amp; Theatre Intensive Workshop</div>
+        <div class="tl-desc">Completed a five-day intensive workshop under Parnab Mukherjee (Knowledge Resource Curator &amp; Pedagogist), exploring the intersection of debate, theatre, and storytelling. Engaged in scriptwriting, magazine analysis, performance exercises, motion building and defense, developing skills in critical thinking, public speaking, and persuasive communication.</div>
+        
+        <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; margin-top:16px;">
+          <div class="tl-tags" style="margin:0;"><span class="tag">Creative Writing</span><span class="tag">Critical Thinking</span><span class="tag">Persuasive Communication</span><span class="tag">Narrative Building</span></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Item 2: Heritage Walk -->
+    <div class="tl-item reveal">
+      <div class="tl-left"><div class="tl-dot">📜</div></div>
+      <div class="tl-body">
+        <div class="tl-date">2024 · 2-day Intensive</div>
+        <div class="tl-title">Heritage Walk I | Assi Ghat &amp; Harmony Bookstore</div>
+        <div class="tl-desc">Participated in a heritage walk led by Parnab Mukherjee (Knowledge Resource Curator &amp; Pedagogist), exploring Varanasi's literary and cultural legacy. Visited Assi Ghat, Harmony Bookstore, and sites associated with Tulsidas and the Ramcharitmanas, while examining the enduring relevance of Kabir and the city's hidden historical narratives.</div>
+        
+        <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; margin-top:16px;">
+          <div class="tl-tags" style="margin:0;"><span class="tag">Heritage Interpretation</span><span class="tag">Historical Inquiry</span><span class="tag">Civilizational Studies</span><span class="tag">Experiential Learning</span></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Item 3: CRY Internship -->
+    <div class="tl-item reveal">
+      <div class="tl-left"><div class="tl-dot">📢</div></div>
+      <div class="tl-body">
+        <div class="tl-date">2026 · 4-weeks Programme</div>
+        <div class="tl-title">CRY (Child Rights and You) | Outreach &amp; Fundraising Intern</div>
+        <div class="tl-desc">Contributed to outreach and fundraising initiatives supporting children's rights and education. Attended four masterclasses by leaders including Rakesh Godhwani (Founder, School of Meaningful Experiences) and Sonali Patankar (Founder, Ahaan Foundation), gaining insights into leadership, communication, and social impact.</div>
+        
+        <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; margin-top:16px;">
+          <div class="tl-tags" style="margin:0;"><span class="tag">Community Mobilisation</span><span class="tag">Advocacy &amp; Awareness</span><span class="tag">Grassroots Engagement</span><span class="tag">Changemaking</span></div>
+          <a href="assets/Kashish Jaiswal Volunteering Certificate(1).pdf" target="_blank" rel="noopener" class="btn-ghost" style="padding:8px 20px; font-size:0.7rem;">
+            📄 View Certificate
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Item 4: WeDidIt × MiddleMen Asia -->
+    <div class="tl-item reveal">
+      <div class="tl-left"><div class="tl-dot">✍️</div></div>
+      <div class="tl-body">
+        <div class="tl-date">2026 · 30-days Internship</div>
+        <div class="tl-title">WeDidIt × MiddleMen Asia | Research &amp; Content Writing Internship</div>
+        <div class="tl-desc">During my internships with WeDidIt and MiddleMen Asia, I contributed to research-driven content and authored analytical papers on social impact, leadership, and behavioral change. The experience strengthened my ability to translate complex ideas into engaging, evidence-based writing while working in a collaborative professional environment.</div>
+        
+        <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; margin-top:16px;">
+          <div class="tl-tags" style="margin:0;"><span class="tag">Research &amp; Thought Leadership</span><span class="tag">Analytical Writing</span><span class="tag">Behavioural Research</span><span class="tag">Impact Narratives</span></div>
+          <a href="assets/Wedidit×MiddlemenAsia.pdf" target="_blank" rel="noopener" class="btn-ghost" style="padding:8px 20px; font-size:0.7rem;">
+            📄 View Certificate
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+<div class="section-divider"></div>
+<!-- ══════════════════════════════════════════
+     CONTACT / FOOTER
+══════════════════════════════════════════ -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="eyebrow reveal" style="justify-content:center;margin-bottom:16px;">Connect</div>
+    <h2 class="contact-h reveal">Let's Collaborate <em>Together</em></h2>
+    <p class="contact-sub reveal">I believe every conversation, collaboration, and opportunity is a chance to learn, create, and contribute. Whether it is through ideas, initiatives, or meaningful exchanges, I am always open to connecting with people who share a passion for growth and impact.</p>
+    <p class="contact-note reveal">"Looking forward to  meaningful collaborations that inspire growth and change."</p>
+    
+    <!-- Converted to non-clickable display box (mailto: removed) -->
+    <div class="contact-cards reveal">
+      <div class="contact-card">
+        <div class="cc-icon">✉️</div>
+        <span class="cc-lbl">Email</span>
+        <span class="cc-val">jaiswalkashish2009@gmail.com</span>
+      </div>
+      <a href="tel:+916393745966" class="contact-card">
+        <div class="cc-icon">📞</div>
+        <span class="cc-lbl">Phone</span>
+        <span class="cc-val">+91 6393745966</span>
+      </a>
+    </div>
+    
+    <div class="contact-loc reveal">
+      📍 Varanasi, Uttar Pradesh, India &nbsp;·&nbsp;
+      <span>Sunbeam School Mughalsarai</span> &nbsp;·&nbsp;
+      Class XII Humanities + Applied Mathematics
+    </div>
+  </div>
+</section>
+<footer>
+  <span class="foot-brand">Kashish Jaiswal</span>
+  <div class="foot-links">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Awards</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#leadership">Leadership</a>
+    <a href="#workshops">Workshops</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <span class="foot-copy">© 2026 Kashish Jaiswal · Turning perspectives into possibilities.</span>
+</footer>
+<!-- Back to top -->
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+<!-- ══════════════════════════════════════════
+     JAVASCRIPT
+══════════════════════════════════════════ -->
+<script>
+/* Scroll restoration */
+if(history.scrollRestoration) history.scrollRestoration='manual';
+window.onbeforeunload=()=>window.scrollTo(0,0);
+/* Progress bar */
+const prog=document.getElementById('prog');
+function updateProg(){
+  const s=window.scrollY,t=document.documentElement.scrollHeight-window.innerHeight;
+  prog.style.width=(s/t*100)+'%';
+}
+/* Nav scroll state */
+const nav=document.getElementById('nav');
+const backTop=document.getElementById('back-top');
+/* Active nav */
+const secs=document.querySelectorAll('section[id]');
+const navAs=document.querySelectorAll('.nav-links a');
+function updateActive(){
+  let cur='';
+  secs.forEach(s=>{if(window.scrollY>=s.offsetTop-100)cur=s.id;});
+  navAs.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+cur));
+}
+function onScroll(){
+  updateProg();
+  nav.classList.toggle('scrolled',window.scrollY>60);
+  backTop.classList.toggle('show',window.scrollY>400);
+  updateActive();
+}
+window.addEventListener('scroll',onScroll,{passive:true});
+/* Mobile nav */
+const hamBtn=document.getElementById('hamBtn');
+const mobMenu=document.getElementById('mob-menu');
+hamBtn.addEventListener('click',()=>mobMenu.classList.toggle('open'));
+function closeMob(){mobMenu.classList.remove('open');}
+/* Intersection observer — reveal */
+const reveals=document.querySelectorAll('.reveal');
+const io=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
+  });
+},{threshold:.10,rootMargin:'0px 0px -36px 0px'});
+reveals.forEach(el=>io.observe(el));
+/* Init */
+updateProg();
+</script>
+</body>
+</html>
